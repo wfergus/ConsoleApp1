@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
+
 namespace CurrencyProject
 {
     public abstract class Coin : ICoin
