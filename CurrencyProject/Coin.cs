@@ -17,7 +17,7 @@ namespace CurrencyProject
         }
         public string About()
         {
-
+            return $"This {Name} was made in {Year} and is worth {MonetaryValue}.";
         }
     }
 }

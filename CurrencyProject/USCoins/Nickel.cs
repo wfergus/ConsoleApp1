@@ -6,6 +6,16 @@ namespace CurrencyProject
 {
     public class Nickel : USCoin
     {
-        public Nickel() { }
+        public Nickel()
+        {
+            MonetaryValue = 0.05d;
+            Name = "Nickel";
+        }
+        public Nickel(USCoinMintMark mm)
+        {
+            MonetaryValue = 0.05d;
+            Name = "Nickel";
+            MintMark = mm;
+        }
     }
 }

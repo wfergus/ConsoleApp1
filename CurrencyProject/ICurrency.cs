@@ -8,7 +8,7 @@ namespace CurrencyProject
     {
         string Name { get; }
         double MonetaryValue { get; set; }
-
+   
         string About();
     }
 }

@@ -6,6 +6,17 @@ namespace CurrencyProject
 {
     public class Penny : USCoin
     {
-        public Penny() { }
+        public Penny()
+        {
+            MonetaryValue = 0.01d;
+            Name = "Penny";
+        }
+
+        public Penny(USCoinMintMark mm)
+        {
+            MonetaryValue = 0.01d;
+            Name = "Penny";
+            MintMark = mm;
+        }
     }
 }

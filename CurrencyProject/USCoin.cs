@@ -6,19 +6,22 @@ namespace CurrencyProject
 {
     public abstract class USCoin : Coin
     {
-        USCoinMintMark MintMark;
-
+        public USCoinMintMark MintMark;
+        
         public USCoin() { }
-        public USCoin(USCoinMintMark mm) { }
+        public USCoin(USCoinMintMark mm)
+        {
+            MintMark = mm;
+        }
 
         public string About()
         {
-
+            return $" ";
         }
 
         public void GetMintNameFromMark()
         {
-
+            
         }
 
     }

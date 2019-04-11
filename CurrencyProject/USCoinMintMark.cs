@@ -11,4 +11,5 @@ namespace CurrencyProject
         S,
         W
     }
+    
 }

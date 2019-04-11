@@ -1,8 +1,9 @@
-﻿using System;
+﻿using CurrencyProject;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace ConsoleApp1
+namespace CurrencyProject
 {
     public interface IBankNote : ICurrency
     {
