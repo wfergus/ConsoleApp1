@@ -7,8 +7,12 @@ namespace CurrencyProject
     public abstract class USCoin : Coin
     {
         public USCoinMintMark MintMark;
-        
-        public USCoin() { }
+        public string mmName;
+
+        public USCoin()
+        {
+
+        }
         public USCoin(USCoinMintMark mm)
         {
             MintMark = mm;
@@ -19,10 +23,15 @@ namespace CurrencyProject
             return $" ";
         }
 
-        public void GetMintNameFromMark()
+        public void GetMintNameFromMark(USCoinMintMark mm)
         {
-            
+            switch (mm)
+            {
+                case USCoinMintMark.P: mmName = "Philadelphia"; break;
+                case USCoinMintMark.D: mmName = "Denver"; break;
+                case USCoinMintMark.S: mmName = "San Francisco"; break;
+                case USCoinMintMark.W: mmName = "West Point"; break;
+            }
         }
-
     }
 }
